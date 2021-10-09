@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int rem,rev=0,rnum;
+    long int n,an;
+    printf("enter any number\n");
+    scanf("%ld",&n);
+    an=n;
+    while(n>0)
+    {
+        rem=n%10;
+        if(rem!=0)
+        rev=rev*10+rem;
+        n=n/10;
+        continue;
+    }
+    while(rev>0)
+    {
+        rem=rev%10;
+        rnum=rnum*10+rem;
+        rev=rev/10;
+    }
+    printf("number after removing all the zeros=%d",rnum);
+    return 0;
+} 
+output:
+enter any number
+8245
+number after removing all the zeros=8245
+
+output:
+enter any number
+2035
+number after removing all the zeros=235
+
+output:
+enter any number
+1000
+number after removing all the zeros=1
