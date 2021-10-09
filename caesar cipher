@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int cw,pin;
+    printf("enter code word:\n");
+    scanf("%d",&cw);
+    pin=cw+1111;
+    if(cw>=1000 && cw<10000)
+    printf("pin is:%d",pin);
+    else
+    printf("enter valid code word");
+    return 0;
+}
+output:
+enter code word:
+8245
+pin is:9356
+
+output:
+enter code word:
+4184
+pin is:5295
+
+output:
+enter code word:
+2995
+pin is:3006
