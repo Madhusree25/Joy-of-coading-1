@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,count,dig,rev;
+    printf("enter the number:");
+    scanf("%d",&num);
+    count=0;
+    rev=0;
+    while(num!=0)
+    {
+        dig=num%10;
+        rev=rev*10+dig;
+        num=num/10;
+        count++;
+    }
+    printf("the reverse of the number is %d\n",rev);
+    printf("the number of digits is %d",count);
+}
+output:
+enter the number:45678
+the reverse of the number is 87654
+the number of digit is 5
+
+
+output:
+enter the number:88993
+the reverse of number is 39988
+the number of digit is 6
