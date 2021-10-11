@@ -1,0 +1,77 @@
+[8:14 pm, 11/10/2021] Yashvin: include <stdio.h>
+
+int main()
+{
+    int a[6],sum=0;
+    float b[6],sum1=0,avg1,avg2;
+    
+    printf("Enter the daily wages of Mr.Int : ");
+    for(int i=0;i<6;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nEnter the daily wages of Mr.Float :");
+    for(int j=0;j<6;j++)
+    {
+        scanf("%f",&b[j]);
+    }
+    for(int i=0;i<6;i++)
+    {
+        sum+=a[i];
+    }
+    for(int j=0;j<6;j++)
+    {
+        sum1+=b[j];
+    }
+    printf("\nThe weekly salary of Mr.Int is Rs.%d",sum);
+    printf("\nThe weekly salary of Mr.Float is Rs.%f",sum1);
+    avg1=sum/6;
+    avg2=sum1/6;
+    
+    printf("\nThe average salary of Mr.Int is %f",avg1);
+    printf("\nThe average salary of Mr.Float is %f",avg2);
+    return 0;
+}
+[8:16 pm, 11/10/2021] Yashvin: include <stdio.h>
+
+int main()
+{
+    int a[6],sum=0;
+    float b[6],sum1=0,avg1,avg2;
+    
+    printf("Enter the daily wages of Mr.Int : ");
+    for(int i=0;i<6;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nEnter the daily wages of Mr.Float :");
+    for(int j=0;j<6;j++)
+    {
+        scanf("%f",&b[j]);
+    }
+    for(int i=0;i<6;i++)
+    {
+        sum+=a[i];
+    }
+    for(int j=0;j<6;j++)
+    {
+        sum1+=b[j];
+    }
+    printf("\nThe weekly salary of Mr.Int is Rs.%d",sum);
+    printf("\nThe weekly salary of Mr.Float is Rs.%f",sum1);
+    avg1=sum/6;
+    avg2=sum1/6;
+    
+    printf("\nThe average salary of Mr.Int is %f",avg1);
+    printf("\nThe average salary of Mr.Float is %f",avg2);
+    return 0; 
+    
+}
+output:
+enter daily wages of Mr.Int:560 660 590 760 480 960
+enter daily wages of Mr.Float:97.50 66.0 79.25 76.55 98.45 96.40
+
+the weekly salary of Mr.Int is Rs.4010
+the weekly salary of Mr.Float is Rs.514.150024
+the average salary of Mr.Int is Rs.668.000000
+the average salary of Mr,Float is Rs.85.691673
